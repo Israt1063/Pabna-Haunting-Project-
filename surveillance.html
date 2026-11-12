@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="#0b1114" name="theme-color"/>
+<title>The Pabna Haunting | CCTV Surveillance</title>
+<link href="assets/sigil.svg" rel="icon" type="image/svg+xml"/><link href="css/style.css" rel="stylesheet"/><script defer="" src="js/app.js"></script>
+</head>
+<body data-page="surveillance">
+<div aria-hidden="true" class="noise"></div><div aria-hidden="true" class="ambient-glow"></div>
+<header class="site-header">
+<a class="brand" href="index.html"><img alt="" height="34" src="assets/sigil.svg" width="34"/><span>THE PABNA <strong>HAUNTING</strong><small data-i18n="brandSub">PARANORMAL RESEARCH CELL / DIVISION 07</small></span></a>
+<nav aria-label="Main navigation" class="primary-nav" data-i18n-aria="menuAria"><a data-i18n="navGate" href="index.html">01 / GATEWAY</a><a aria-current="page" class="active" data-i18n="navCctv" href="surveillance.html">02 / CCTV</a><a data-i18n="navArchive" href="archive.html">03 / ARCHIVE</a><a data-i18n="navEscape" href="escape.html">04 / ESCAPE</a></nav>
+<div class="header-actions"><button aria-label="Switch language" class="tiny-action" data-i18n-aria="langAria" id="lang-toggle" type="button">বাংলা</button><button aria-label="Toggle ambient sound" aria-pressed="false" class="tiny-action" data-i18n-aria="soundAria" id="sound-toggle" type="button"><span aria-hidden="true">♫</span> <span id="sound-label">SOUND OFF</span></button></div>
+</header>
+<main class="page-shell investigation-shell" id="main">
+<section class="page-intro">
+<div><p class="eyebrow"><span class="red-dash"></span> <span data-i18n="cctvEyebrow">NODE 02 / VISUAL INTERCEPT</span></p><h1 data-i18n="cctvTitle">Eyes in the <em>dark.</em></h1><p data-i18n="cctvDescription">Six dead cameras. One surviving clue. Select a feed, switch to infrared, and scan the correct camera to recover the hidden evidence number.</p></div>
+<div class="mission-status"><span class="pulse-dot"></span><span data-i18n="cctvStatus">CCTV NETWORK / UNSTABLE</span><strong data-i18n="missionStatus">06 CAMERAS</strong></div>
+</section><p class="direct-access-badge" data-i18n="directNote">OPEN ACCESS: All pages work independently; puzzles remain interactive.</p>
+<div class="surveillance-layout">
+<section aria-label="Simulated CCTV camera grid" class="camera-section">
+<div class="section-bar"><span data-i18n="cameraGridLabel">SECURITY CAMERA MATRIX</span><span data-i18n="camRecording">● REC / 720p / SIMULATED</span></div>
+<div class="camera-grid" id="camera-grid">
+<button aria-label="View camera 1, East Ward" aria-pressed="true" class="camera-card selected" data-camera="1" data-i18n-aria="camAria1" type="button"><span class="camera-scene scene-one"></span><span class="camera-scan"></span><span class="camera-tag">CAM 01 <span class="rec-dot">●</span></span><span class="camera-location" data-i18n="camera1">EAST WARD</span><span class="camera-time">02:17:03</span></button>
+<button aria-label="View camera 2, Isolation" aria-pressed="false" class="camera-card" data-camera="2" data-i18n-aria="camAria2" type="button"><span class="camera-scene scene-two"></span><span class="camera-scan"></span><span class="camera-tag">CAM 02 <span class="rec-dot">●</span></span><span class="camera-location" data-i18n="camera2">ISOLATION</span><span class="camera-time">02:17:04</span></button>
+<button aria-label="View camera 3, Records Hall" aria-pressed="false" class="camera-card" data-camera="3" data-i18n-aria="camAria3" type="button"><span class="camera-scene scene-three"></span><span class="camera-scan"></span><span class="camera-tag">CAM 03 <span class="rec-dot">●</span></span><span class="camera-location" data-i18n="camera3">RECORDS HALL</span><span class="camera-time">02:17:05</span></button>
+<button aria-label="View camera 4, Stairwell" aria-pressed="false" class="camera-card" data-camera="4" data-i18n-aria="camAria4" type="button"><span class="camera-scene scene-four"></span><span class="camera-scan"></span><span class="camera-tag">CAM 04 <span class="rec-dot">●</span></span><span class="camera-location" data-i18n="camera4">STAIRWELL</span><span class="camera-time">02:17:06</span></button>
+<button aria-label="View camera 5, Generator" aria-pressed="false" class="camera-card" data-camera="5" data-i18n-aria="camAria5" type="button"><span class="camera-scene scene-five"></span><span class="camera-scan"></span><span class="camera-tag">CAM 05 <span class="rec-dot">●</span></span><span class="camera-location" data-i18n="camera5">GENERATOR</span><span class="camera-time">02:17:07</span></button>
+<button aria-label="View camera 6, Exit Tunnel" aria-pressed="false" class="camera-card" data-camera="6" data-i18n-aria="camAria6" type="button"><span class="camera-scene scene-six"></span><span class="camera-scan"></span><span class="camera-tag">CAM 06 <span class="rec-dot">●</span></span><span class="camera-location" data-i18n="camera6">EXIT TUNNEL</span><span class="camera-time">02:17:08</span></button>
+</div>
+<div class="legend-line"><span><span class="signal-indicator"></span> <span data-i18n="simulatedFootage">ALL FEEDS ARE SIMULATED</span></span><span data-i18n="internalSystem">PRC INTERNAL SYSTEM · V3.1</span></div>
+</section>
+<aside class="glass-panel control-panel">
+<div class="panel-heading"><span data-i18n="signalControls">SIGNAL CONTROLS</span><span class="status-light" data-i18n="liveLabel">LIVE</span></div>
+<div class="control-body">
+<p class="kicker" data-i18n="selectedFeed">SELECTED FEED</p><div class="feed-number">CAM <span id="current-camera">01</span></div><p class="camera-detail" id="current-location">EAST WARD</p>
+<div class="form-divider"></div>
+<p class="kicker" data-i18n="spectrum">SPECTRUM MODE</p>
+<div aria-label="CCTV spectrum" class="segmented" role="group"><button aria-pressed="true" class="mode-button active" data-i18n="cameraNormal" data-mode="normal" type="button">NORMAL</button><button aria-pressed="false" class="mode-button" data-i18n="cameraInfrared" data-mode="infrared" type="button">INFRARED</button></div>
+<p class="kicker margin-top" data-i18n="distortion">SIGNAL DISTORTION</p><label class="sr-only" data-i18n="distortionLabel" for="distortion">Distortion strength</label><input id="distortion" max="100" min="0" type="range" value="28"/><div class="slider-ends"><span data-i18n="stable">STABLE</span><span id="distortion-value">28%</span><span data-i18n="unstable">UNSTABLE</span></div>
+<button class="btn btn-outline full" id="glitch-button" type="button"><span data-i18n="triggerGlitch">TRIGGER GLITCH</span> <span aria-hidden="true">⌁</span></button>
+<button class="btn btn-primary full" id="scan-button" type="button"><span data-i18n="scanFeed">SCAN SELECTED FEED</span> <span aria-hidden="true">◎</span></button>
+<p aria-live="polite" class="form-feedback control-message" data-i18n="scanInstruction" id="scan-feedback">The lost evidence is embedded in one camera's infrared feed.</p>
+<div class="clue-panel" hidden="" id="cctv-clue"><span class="kicker text-green" data-i18n="recoveredSignal">RECOVERED / EVIDENCE ID</span><strong>0427</strong><p data-i18n="clueArchive">Preserve this number for the archive cipher vault.</p><a class="btn btn-primary full" href="archive.html"><span data-i18n="goArchive">ENTER THE ARCHIVE</span> ↗</a></div>
+<button class="btn btn-outline full sfx-button" data-i18n="footstepsButton" data-sfx="footsteps" type="button">PLAY FOOTSTEPS</button><p class="audio-hint" data-i18n="sfxHint">Sound effects play only when sound is enabled. The site never uses your microphone.</p></div>
+</aside>
+</div>
+</main>
+<footer class="site-footer"><span>© PRC / CASE 013 · <span data-i18n="fictionNote">FICTIONAL INTERACTIVE EXPERIENCE</span></span><span data-i18n="footOnline">ICHAMATI TRANSMISSION SYSTEM · ONLINE</span><button class="text-button" data-i18n="resetGame" id="reset-progress" type="button">RESET PROGRESS</button></footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0b1114" name="theme-color"/>
+<meta content="The Pabna Haunting: four open-access interactive horror pages, audiovisual effects, bilingual puzzles and escape challenge." name="description"/>
+<title>The Pabna Haunting | Gateway Hub</title>
+<link href="assets/sigil.svg" rel="icon" type="image/svg+xml"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/app.js"></script>
+</head>
+<body data-page="gateway">
+<div aria-hidden="true" class="noise"></div>
+<div aria-hidden="true" class="ambient-glow"></div>
+<header class="site-header">
+<a aria-label="The Pabna Haunting home" class="brand" href="index.html">
+<img alt="" height="34" src="assets/sigil.svg" width="34"/>
+<span>THE PABNA <strong>HAUNTING</strong><small data-i18n="brandSub">PARANORMAL RESEARCH CELL / DIVISION 07</small></span>
+</a>
+<nav aria-label="Main navigation" class="primary-nav" data-i18n-aria="menuAria">
+<a aria-current="page" class="active" data-i18n="navGate" href="index.html">01 / GATEWAY</a>
+<a data-i18n="navCctv" href="surveillance.html">02 / CCTV</a>
+<a data-i18n="navArchive" href="archive.html">03 / ARCHIVE</a>
+<a data-i18n="navEscape" href="escape.html">04 / ESCAPE</a>
+</nav>
+<div class="header-actions">
+<button aria-label="Switch language" class="tiny-action" data-i18n-aria="langAria" id="lang-toggle" type="button">বাংলা</button>
+<button aria-label="Toggle ambient sound" aria-pressed="false" class="tiny-action" data-i18n-aria="soundAria" id="sound-toggle" type="button"><span aria-hidden="true">♫</span> <span id="sound-label">SOUND OFF</span></button>
+</div>
+</header>
+<main class="page-shell gateway-shell" id="main">
+<section aria-labelledby="hero-title" class="gateway-hero">
+<div aria-label="A dark abandoned asylum beyond the mist" class="hero-visual" role="img">
+<div class="visual-scanline"></div>
+<div class="visual-caption"><span class="pulse-dot"></span><span data-i18n="heroRegion">PABNA, BANGLADESH</span><span data-i18n="heroCoord">24°00′N / INCIDENT 013</span></div>
+</div>
+<div class="hero-copy">
+<p class="eyebrow"><span class="red-dash"></span> <span data-i18n="gateEyebrow">TRANSMISSION INTERCEPTED · 02:17 AM</span></p>
+<h1 data-i18n="gateTitle" id="hero-title">Some doors<br/>should <em>stay shut.</em></h1>
+<p class="hero-description" data-i18n="gateDescription">A distress signal is broadcasting from the abandoned Pabna Mental Asylum near the Ichamati River. The signal is not asking for help. It is asking for you.</p>
+<div class="case-summary">
+<div><span data-i18n="caseFileLabel">CASE FILE</span><strong>PRC / CELL-13</strong></div>
+<div><span data-i18n="threatLabel">THREAT LEVEL</span><strong class="text-red" data-i18n="critical">CRITICAL</strong></div>
+<div><span data-i18n="signalLabel">SIGNAL</span><strong data-i18n="signalActive">ACTIVE / 01</strong></div>
+</div>
+</div>
+</section>
+<section aria-label="Access and case notes" class="gateway-bottom">
+<div class="glass-panel terminal-panel">
+<div class="panel-heading"><span class="terminal-dots"><i></i><i></i><i></i></span><span data-i18n="terminalTitle">SECURE TERMINAL / PRC-07</span><span class="status-light" data-i18n="terminalStatus">OPEN DEMO</span></div>
+<div class="terminal-content">
+<p class="terminal-line"><span>&gt;</span> <span data-i18n="terminalWelcome">INCOMING OPERATOR DETECTED.</span><span class="terminal-caret">▌</span></p>
+<p class="terminal-muted" data-i18n="terminalInstruction">Enter the clearance passcode to begin the investigation.</p><p class="open-access-tip" data-i18n="noGate">The passcode is optional. Use the menu to open any page without completing previous puzzles.</p>
+<form class="entry-form" id="login-form" novalidate="">
+<label data-i18n="passcodeLabel" for="passcode">CLEARANCE PASSCODE</label>
+<div class="field-with-button">
+<input aria-describedby="login-feedback" autocomplete="off" id="passcode" maxlength="16" name="passcode" placeholder="••••-••" required="" spellcheck="false" type="text"/>
+<button class="btn btn-primary" type="submit"><span data-i18n="accessButton">GRANT ACCESS</span> <span aria-hidden="true">↗</span></button>
+</div>
+<p aria-live="polite" class="form-feedback" id="login-feedback"></p>
+</form>
+<button aria-expanded="false" class="hint-toggle" data-target="passcode-hint" type="button"><span>?</span> <span data-i18n="needHint">Need a clearance hint?</span></button>
+<p class="hint-content" data-i18n="passcodeHint" hidden="" id="passcode-hint">Your clearance is printed in the CASE FILE panel: enter CELL-13.</p>
+<a class="btn btn-outline direct-link" data-i18n="openCctv" href="surveillance.html">OPEN CCTV DIRECTLY</a></div>
+</div>
+<aside class="glass-panel briefing-panel">
+<div class="panel-heading"><span data-i18n="briefingTitle">MISSION BRIEF / CONFIDENTIAL</span><span class="tiny-cross">✳</span></div>
+<p class="briefing-quote" data-i18n="briefingQuote">“The ward has been closed for decades. Yet every night, at 02:17, the monitors turn themselves on.”</p>
+<p class="briefing-meta" data-i18n="briefingMeta">FIELD REPORT · PARANORMAL RESEARCH CELL</p>
+<div class="route-steps"><span class="complete">01 <small data-i18n="stepEnter">ENTER</small></span><span>02 <small data-i18n="stepObserve">OBSERVE</small></span><span>03 <small data-i18n="stepDecode">DECODE</small></span><span>04 <small data-i18n="stepEscape">ESCAPE</small></span></div>
+<button class="btn btn-outline sfx-button" data-i18n="ambientPreview" data-sfx="whisper" type="button">PLAY WHISPER</button><p class="audio-hint" data-i18n="sfxHint">Sound effects play only when sound is enabled. The site never uses your microphone.</p></aside>
+</section>
+</main>
+<footer class="site-footer"><span>© PRC / CASE 013 · <span data-i18n="fictionNote">FICTIONAL INTERACTIVE EXPERIENCE</span></span><span data-i18n="footOnline">ICHAMATI TRANSMISSION SYSTEM · ONLINE</span><button class="text-button" data-i18n="resetGame" id="reset-progress" type="button">RESET PROGRESS</button></footer>
+</body>
+</html>
